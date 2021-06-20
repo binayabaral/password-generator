@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./main.css" />
+		<!-- include font awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="icon" type="image/png" href="./favicon.png" />
+		<title>Password Generator</title>
+		<script src="./main.js" defer></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<main class="main">
+				<section class="password-generator">
+					<div class="container">
+						<h1>Password Generator</h1>
+						<div class="password-generator-content">
+							<span id="password"></span>
+							<form action="#" id="password-generator-form">
+								<div class="form-grp">
+									<label for="number-of-characters">No. of Characters:</label>
+									<div class="range-and-number">
+										<input type="range" name="number-of-characters-range" value="15" max="50" id="number-of-characters-range" />
+										<input type="number" name="number-of-characters" value="15" max="50" id="number-of-characters" />
+									</div>
+								</div>
+								<div class="form grp">
+									<label class="custom-checkbox-container">
+										<span class="label">Include Uppercase</span>
+										<input type="checkbox" id="include-uppercase" checked />
+										<span class="checkmark"></span>
+									</label>
+								</div>
+								<div class="form grp">
+									<label class="custom-checkbox-container">
+										<span class="label">Include Numbers</span>
+										<input type="checkbox" id="include-numbers" checked />
+										<span class="checkmark"></span>
+									</label>
+								</div>
+								<div class="form grp">
+									<label class="custom-checkbox-container">
+										<span class="label">Include Symbols</span>
+										<input type="checkbox" id="include-symbols" checked />
+										<span class="checkmark"></span>
+									</label>
+								</div>
+								<button type="submit">Generate Password</button>
+							</form>
+							<button disabled type="button" id="copy-password">Copy Password</button>
+						</div>
+					</div>
+				</section>
+			</main>
+			<span class="password-copied-txt">Password Copied to clipboard</span>
+		</div>
+	</body>
+</html>
